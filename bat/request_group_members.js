@@ -3,6 +3,7 @@ var groupMembers = require("../models/google_group_members_api");
 
 var PARALLEL_REQUEST_COUNT = 300;
 var EXECUTE_COUNT = 3;
+var testTargetGroupKey = "a-group@gnkmr.com";
 
 var n = 0;
 async.whilst(
@@ -70,7 +71,7 @@ function membersParallelRequest(paralellCount, callback) {
 }
 
 function requestMembers(i, callback) {
-  groupMembers.list("a-group@gnkmr.com", function(err, members) {
+  groupMembers.list(testTargetGroupKey, function(err, members) {
     // console.log({
     //   i,
     //   err,
