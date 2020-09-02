@@ -6,7 +6,7 @@
   "dependencies": {
     "async": "^2.1.4",
     "google-auth-library": "^0.10.0",
-    "googleapis": "^16.1.0"
+    "googleapis": "^59.0.0"
   },
   "devDependencies": {},
   "scripts": {
